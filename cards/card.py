@@ -124,8 +124,10 @@ def createUserCard(data):
 def main():
     #Ask for user input: 'username'
     user_input = input("Enter Github username: ")
-    user_url = "https://api.github.com/users/{0}".format(user_input) 
+    user_url = "https://api.github.com/users/{0}".format(user_input)
     data = createAPIData(user_url)
+    if len(data) < 3:
+        return print("User Not Found")
     
     #Create a card for user in data set
     createUserCard(data)
