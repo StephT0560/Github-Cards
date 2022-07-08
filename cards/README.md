@@ -10,3 +10,4 @@ Technologies Used:
 * Sqlalchemy
 * Pandas
 * Climage
+* Rich Styling
